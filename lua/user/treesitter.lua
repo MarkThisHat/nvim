@@ -1,7 +1,8 @@
 -- lua/user/treesitter.lua
 
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = "all",  -- You can specify a list of languages or use "maintained"
+    --ensure_installed = "all",
+  ensure_installed = { "c", "cpp", "python" },  -- Specific languages
   highlight = {
       enable = true,  -- Enable Treesitter-based syntax highlighting
   },

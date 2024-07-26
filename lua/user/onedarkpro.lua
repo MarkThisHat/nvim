@@ -1,14 +1,11 @@
 -- lua/user/onedark.lua
 
+local highlights = require('user.highlights').setup()
+
 require('onedarkpro').setup({
   theme = 'onedark_dark',
   colors = {}, -- Override default colors or leave empty to use defaults
-  highlights = {
-    Function = { fg = "#dcdcaa" },
-    Comment = { fg = "#6a9955" },
-    String = { fg = "#ce9178" },
-    Variable = { fg = "#9CDCFE" }
-  }, -- Override highlight groups or leave empty to use defaults
+  highlights = highlights;
   styles = {
       comments = "italic",
       keywords = "bold",

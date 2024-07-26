@@ -1,14 +1,26 @@
 --print('Package Path:', package.path)
 
 package.path = package.path .. ';' .. vim.fn.stdpath('config') .. '/lua/?.lua'
-require('user.options')
-require('user.keymaps')
-require('user.plugins')
-require('user.lsp')
-require('user.nvim-tree')
-require('user.treesitter')
-require('user.bufferline')
-require('user.which-key')
-require('user.alpha')
-require('user.onedarkpro')
---require('user.project')
+
+-- Function to safely require modules and debug errors
+local function safe_require(module)
+  local status, result = pcall(require, module)
+  if not status then
+      print('Error loading module:', module)
+      print('Detailed Error:', result)
+  else
+      print('Successfully loaded module:', module)
+  end
+end
+
+safe_require('user.options')
+safe_require('user.keymaps')
+safe_require('user.plugins')
+safe_require('user.lsp')
+safe_require('user.nvim-tree')
+safe_require('user.treesitter')
+safe_require('user.bufferline')
+safe_require('user.which-key')
+safe_require('user.alpha')
+safe_require('user.onedarkpro')
+--safe_require('user.project')

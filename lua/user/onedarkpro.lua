@@ -3,11 +3,16 @@
 require('onedarkpro').setup({
   theme = 'onedark_dark',
   colors = {}, -- Override default colors or leave empty to use defaults
-  highlights = {}, -- Override highlight groups or leave empty to use defaults
+  highlights = {
+    Function = { fg = "#dcdcaa" },
+    Comment = { fg = "#6a9955" },
+    String = { fg = "#ce9178" },
+    Variable = { fg = "#9CDCFE" }
+  }, -- Override highlight groups or leave empty to use defaults
   styles = {
       comments = "italic",
       keywords = "bold",
-      functions = "italic,bold",
+      functions = "bold",
       strings = "NONE",
       variables = "NONE"
   },

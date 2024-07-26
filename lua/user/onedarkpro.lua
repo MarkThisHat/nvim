@@ -8,8 +8,8 @@ require('onedarkpro').setup({
   highlights = highlights;
   styles = {
       comments = "italic",
-      keywords = "bold",
       functions = "bold",
+      keywords = "NONE",
       strings = "NONE",
       variables = "NONE"
   },

@@ -13,6 +13,10 @@ require('lazy').setup({
         'akinsho/bufferline.nvim',
         requires = 'nvim-tree/nvim-web-devicons'
     },
+    {
+        'glepnir/lspsaga.nvim',
+        event = 'BufRead'
+    },
     'folke/which-key.nvim',
     'goolord/alpha-nvim',
     'olimorris/onedarkpro.nvim'

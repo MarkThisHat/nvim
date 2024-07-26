@@ -2,7 +2,7 @@
 
 require'nvim-treesitter.configs'.setup {
     --ensure_installed = "all",
-  ensure_installed = { "c", "cpp", "python", "typescript" },  -- Specific languages
+  ensure_installed = { "c", "cpp", "python", "typescript", "readline", "regex", "rust", "scala" },  -- Specific languages
   highlight = {
       enable = true,  -- Enable Treesitter-based syntax highlighting
   },

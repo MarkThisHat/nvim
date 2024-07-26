@@ -12,4 +12,5 @@ require('lazy').setup({
     },
     'folke/which-key.nvim',
     'goolord/alpha-nvim',
+    'olimorris/onedarkpro.nvim'
 })

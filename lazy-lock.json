@@ -4,5 +4,6 @@
   "nvim-lspconfig": { "branch": "master", "commit": "9c762dcd457d2ab99edb3f3433cea9865ded47ad" },
   "nvim-tree.lua": { "branch": "master", "commit": "4e396b26244444c911b73e9f2f40ae0115351fd1" },
   "nvim-treesitter": { "branch": "master", "commit": "63be47f203d3e9174fdac3872fb9766e5bcc5a11" },
+  "onedarkpro.nvim": { "branch": "main", "commit": "f90c110a4944d8d520229d6c6bd8040bfca31a63" },
   "which-key.nvim": { "branch": "main", "commit": "6c1584eb76b55629702716995cca4ae2798a9cca" }
 }

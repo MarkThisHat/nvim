@@ -1,6 +1,4 @@
---package.path = vim.fn.stdpath('config') .. '/lua/?.lua;' .. package.path
-
---print('Updated Package Path:', package.path)
+--print('Package Path:', package.path)
 
 package.path = package.path .. ';' .. vim.fn.stdpath('config') .. '/lua/?.lua'
 require('user.options')
@@ -12,4 +10,5 @@ require('user.treesitter')
 require('user.bufferline')
 require('user.which-key')
 require('user.alpha')
+require('user.onedarkpro')
 --require('user.project')

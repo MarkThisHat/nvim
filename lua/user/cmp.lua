@@ -52,6 +52,7 @@ cmp.setup({
     window = {
         completion = cmp.config.window.bordered(),
         documentation = cmp.config.window.bordered(),
+        max_height = 10,
     },
     experimental = {
         ghost_text = true,

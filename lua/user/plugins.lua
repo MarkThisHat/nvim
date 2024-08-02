@@ -29,5 +29,7 @@ require('lazy').setup({
     },
     'folke/which-key.nvim',
     'goolord/alpha-nvim',
+    'Vigemus/iron.nvim',
+    'goerz/jupytext.vim',
     'olimorris/onedarkpro.nvim'
 })

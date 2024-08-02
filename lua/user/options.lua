@@ -21,3 +21,11 @@ vim.cmd [[
     autocmd FileType cpp setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
   augroup END
 ]]
+
+-- Map iron.nvim's send_line command to use python REPL for code blocks in Markdown
+vim.api.nvim_exec([[
+    augroup IronMarkdown
+        autocmd!
+        autocmd FileType markdown nmap <leader>r :IronRepl<CR>:IronSend<CR>
+    augroup END
+]], false)

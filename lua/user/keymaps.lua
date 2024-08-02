@@ -23,3 +23,9 @@ keymap('n', '<leader>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts) -- Se
 keymap('n', '<leader>ts', ':Inspect<CR>', opts)  -- Highlight captures under cursor
 keymap('n', '<leader>tp', ':InspectTree<CR>', opts)  -- Toggle Treesitter playground
 keymap('n', '<leader>te', ':EditQuery<CR>', opts)  -- Open the Live Query Editor
+
+-- Iron keymaps (also has a list of commands, see :h iron-commands for all available commands)
+keymap("n", "<space>rs", "<cmd>IronRepl<cr>", opts)
+keymap("n", "<space>rr", "<cmd>IronRestart<cr>", opts)
+keymap("n", "<space>rF", "<cmd>IronFocus<cr>", opts)
+keymap("n", "<space>rh", "<cmd>IronHide<cr>", opts)

@@ -6,14 +6,18 @@ iron.setup {
     config = {
         -- Whether a repl should be discarded or not
         scratch_repl = true,
-        -- Your repl definitions come here
         repl_definition = {
+            -- REPL for Markdown files
+            markdown = {
+                -- Use Python REPL for Python code blocks in Markdown
+                command = {"ipython", "--no-autoindent"}
+            },
+            -- REPL for Python files
             python = {
-                -- A default definition for the python repl
                 command = {"ipython", "--no-autoindent"}
             },
         },
-        -- How the REPL window will be opened
+        -- Automatically open the REPL window
         repl_open_cmd = require('iron.view').split.vertical.botright(40),
     },
     -- Iron doesn't set keymaps by default anymore, so you have to set them manually

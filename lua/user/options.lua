@@ -22,6 +22,17 @@ vim.cmd [[
   augroup END
 ]]
 
+--vim.cmd([[
+--  augroup CustomWhichKeyHighlight
+    --autocmd!
+    --autocmd ColorScheme * highlight WhichKeyFloat guibg=#282a36
+    --autocmd ColorScheme * highlight WhichKeyBorder guifg=#ff79c6 guibg=#282a36
+    --autocmd ColorScheme * highlight WhichKey guifg=#f8f8f2
+    --autocmd ColorScheme * highlight WhichKeySeparator guifg=#6272a4
+    --autocmd ColorScheme * highlight WhichKeyGroup guifg=#8be9fd
+  --augroup END
+--]])
+
 -- Map iron.nvim's send_line command to use python REPL for code blocks in Markdown
 vim.api.nvim_exec([[
     augroup IronMarkdown

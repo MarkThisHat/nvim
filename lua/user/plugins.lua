@@ -32,4 +32,9 @@ require('lazy').setup({
     'Vigemus/iron.nvim',
     'goerz/jupytext.vim',
     'olimorris/onedarkpro.nvim'
+},
+{
+    rocks = {
+        enabled = false,  -- Disable Luarocks support
+    },
 })

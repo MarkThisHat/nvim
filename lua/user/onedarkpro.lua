@@ -27,3 +27,7 @@ require('onedarkpro').setup({
 
 -- Load the colorscheme
 vim.cmd('colorscheme onedark_dark')
+
+vim.cmd([[
+  highlight NormalFloat guibg='#000033'
+]])

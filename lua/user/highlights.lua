@@ -11,12 +11,12 @@ local colors = {
     white = "#d4d4d4",
     magenta = "#c586c0",
     yellow = "#dcdcaa",
-    brown = "#ce9178",
+    brown = "#feaf73",
 }
 
 M.setup = function()
     return {
-        Comment = { fg = colors.green },
+        Comment = { fg = "#d42771" },
         Type = { fg = colors.blue },
         -- Cpp:
         ["@operator.cpp"] = { fg = colors.white },
